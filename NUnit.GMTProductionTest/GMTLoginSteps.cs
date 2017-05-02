@@ -27,7 +27,7 @@ namespace NUnit.GMTProductionTest
 
             driver.FindElement(By.Id("txtUsername")).SendKeys("nadim");
 
-            Thread.Sleep(5000);
+            //Thread.Sleep(5000);
         }
         
         [Given(@"I have entered Password")]
@@ -35,7 +35,7 @@ namespace NUnit.GMTProductionTest
         {
             driver.FindElement(By.Id("txtPassword")).SendKeys("dms9842");
 
-            Thread.Sleep(5000);
+            //Thread.Sleep(5000);
         }
         
         [When(@"I click Login")]
