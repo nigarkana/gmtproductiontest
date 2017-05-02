@@ -20,7 +20,7 @@ namespace NUnit.GMTProductionTest
         [Given(@"I have entered User Name")]
         public void GivenIHaveEnteredUserName()
         {
-            driver.Navigate().GoToUrl("http://172.16.1.5/ApprovalSystem/Login.aspx");
+            driver.Navigate().GoToUrl("http://172.16.1.63/gmtProduction");
             driver.Manage().Window.Maximize();
 
             Thread.Sleep(5000);
