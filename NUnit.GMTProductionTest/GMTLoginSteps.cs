@@ -14,6 +14,7 @@ namespace NUnit.GMTProductionTest
 {
     [Binding]
     public class GMTLoginSteps
+        
     {
         IWebDriver driver = new ChromeDriver();
 
