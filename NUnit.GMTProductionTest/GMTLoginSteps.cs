@@ -26,7 +26,7 @@ namespace NUnit.GMTProductionTest
 
             Thread.Sleep(5000);
 
-            driver.FindElement(By.Id("txtUsername")).SendKeys("nadim");
+            driver.FindElement(By.Id("UserName")).SendKeys("nigar");
 
             //Thread.Sleep(5000);
         }
@@ -34,7 +34,7 @@ namespace NUnit.GMTProductionTest
         [Given(@"I have entered Password")]
         public void GivenIHaveEnteredPassword()
         {
-            driver.FindElement(By.Id("txtPassword")).SendKeys("dms9842");
+            driver.FindElement(By.Id("Password")).SendKeys("d123");
 
             //Thread.Sleep(5000);
         }
@@ -42,7 +42,7 @@ namespace NUnit.GMTProductionTest
         [When(@"I click Login")]
         public void WhenIClickLogin()
         {
-            driver.FindElement(By.Id("btnLogin")).Click();
+            driver.FindElement(By.Id("loginBtn")).Click();
         }
        
         [Then(@"Dashboard has shown after user logged in successfully")]
@@ -50,7 +50,7 @@ namespace NUnit.GMTProductionTest
         {
             Thread.Sleep(10000);
 
-            Assert.AreEqual("Md. Nadim Saker (41118)", driver.FindElement(By.Id("lblUsername")).Text);
+            Assert.AreEqual("Hello Nigar", driver.FindElement(By.XPath("//*[@id='header']/nav/div[2]/ul/li[2]")).Text);
         }
     }
 }
