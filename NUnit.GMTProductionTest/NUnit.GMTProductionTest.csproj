@@ -57,6 +57,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GMTFabricIssue.feature</DependentUpon>
     </Compile>
+    <Compile Include="GMTFabricIssueSteps.cs" />
     <Compile Include="GMTFabricRequisition.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
