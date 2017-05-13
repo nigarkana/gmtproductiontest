@@ -21,5 +21,6 @@ C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\bin\
 C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\bin\Debug\nunit.framework.xml
 C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\bin\Debug\WebDriver.xml
 C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\bin\Debug\WebDriver.Support.xml
+C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\obj\Debug\NUnit.GMTProductionTest.csprojResolveAssemblyReference.cache
 C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\obj\Debug\NUnit.GMTProductionTest.dll
 C:\Users\naser\OneDrive\Documents\gmtproductiontest\NUnit.GMTProductionTest\obj\Debug\NUnit.GMTProductionTest.pdb
