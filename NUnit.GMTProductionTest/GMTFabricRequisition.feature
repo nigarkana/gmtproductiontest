@@ -1,11 +1,17 @@
 ﻿Feature: GMTFabricRequisition
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	create a new requisition
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+
+Scenario: Create Requisition for Fabric Booking
+	Given Business Unit, Production Unit and Job code
+	When Press Enter button 
+	Then Job Information is loaded according to the job code
+
+	
+	Given Job code is valid
+	And required information is provided in the grid
+	When click on Save button
+	Then new requisition has been created
+
+
