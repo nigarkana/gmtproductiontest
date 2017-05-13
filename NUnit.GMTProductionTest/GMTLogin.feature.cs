@@ -67,11 +67,9 @@ namespace NUnit.GMTProductionTest
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login with User Name and Password")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void LoginWithUserNameAndPassword()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login with User Name and Password", new string[] {
-                        "mytag"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login with User Name and Password", ((string[])(null)));
 #line 11
 this.ScenarioSetup(scenarioInfo);
 #line 12
