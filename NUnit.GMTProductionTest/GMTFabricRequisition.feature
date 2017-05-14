@@ -15,3 +15,6 @@ Scenario: Create Requisition for Fabric Booking
 	Then new requisition has been created
 
 
+	Given Fabric Requisition is created
+	When A requisition report is displayed and click YES
+	Then report will be displayed in another tab

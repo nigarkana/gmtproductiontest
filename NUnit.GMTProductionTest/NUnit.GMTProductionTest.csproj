@@ -52,6 +52,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GMTCutting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCutting.feature</DependentUpon>
+    </Compile>
     <Compile Include="GMTFabricIssue.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,10 +75,20 @@
       <DependentUpon>GMTLogin.feature</DependentUpon>
     </Compile>
     <Compile Include="GMTLoginSteps.cs" />
+    <Compile Include="GMTRequisitionSearch.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTRequisitionSearch.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTRequisitionSearchSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="GMTCutting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCutting.feature.cs</LastGenOutput>
+    </None>
     <None Include="GMTFabricIssue.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTFabricIssue.feature.cs</LastGenOutput>
@@ -85,6 +100,10 @@
     <None Include="GMTLogin.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTLogin.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTRequisitionSearch.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTRequisitionSearch.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
