@@ -29,10 +29,11 @@ namespace NUnit.GMTProductionTest
             //Click Login Button
             Thread.Sleep(2000);
             driver.FindElement(By.Id("loginBtn")).Click();
+            Thread.Sleep(2000);
 
             //Click Fabric Menu
             driver.FindElement(By.XPath("//*[@id='MenuListLoad']/ul/li[3]/a")).Click();
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
 
             //Click Requisition SubMenu
             driver.FindElement(By.XPath("//*[@id='MenuListLoad']/ul/li[3]/ul[1]/li/a")).Click();
