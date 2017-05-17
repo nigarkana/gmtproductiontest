@@ -49,10 +49,15 @@ namespace NUnit.GMTProductionTest
             select.SelectByText("34725 ");
             Thread.Sleep(2000);
 
-
-
             //Click Search button
             driver.FindElement(By.Id("btnSearch")).Click();
+
+            //Test for invalid requisition
+            //Click Clear Button
+            driver.FindElement(By.Id("btnClear")).Click();
+
+            //Enter wrong Requisition Id in the Search Text
+            driver.FindElement(By.Id("txtFabReqId")).SendKeys("34788");
 
 
 

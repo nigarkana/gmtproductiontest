@@ -1,11 +1,9 @@
 ﻿Feature: GMTFabricIssue
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Issue Fabric Quantity against Requisition ID
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+
+Scenario: Issue Fabric Quantity
+	Given Requisition ID, Job Code and according to Job Code select Requisition ID
+	When write Job Code press Enter then select Requisition or only enter Requistion and press Enter and enter required field and click Save
+	Then the result should be shown in the grid and saved successfully

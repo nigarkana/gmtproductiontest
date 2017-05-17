@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="GMTRequisitionSearchSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selectElement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
