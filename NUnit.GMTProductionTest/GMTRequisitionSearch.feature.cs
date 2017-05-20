@@ -64,53 +64,39 @@ namespace NUnit.GMTProductionTest
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Go To Requisition Form")]
-        public virtual void GoToRequisitionForm()
+        [NUnit.Framework.DescriptionAttribute("Search Fabric Requisition ID by Job Code")]
+        public virtual void SearchFabricRequisitionIDByJobCode()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Go To Requisition Form", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Fabric Requisition ID by Job Code", ((string[])(null)));
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.Given("URL, UserName and Password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
- testRunner.When("Click Fabric, Requisition", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
- testRunner.Then("Fabric Requistion form will be opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search by Requisition ID")]
-        public virtual void SearchByRequisitionID()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search by Requisition ID", ((string[])(null)));
-#line 10
-this.ScenarioSetup(scenarioInfo);
-#line 11
  testRunner.Given("Job Code in the search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
- testRunner.When("press Enter All requisition is displayed according to the Job Code and select one" +
-                    " of the requisition", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 13
- testRunner.Then("Result should be shown according to the search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 6
+ testRunner.When("press Enter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 7
+ testRunner.And("Requisition ID is selected", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 8
+ testRunner.And("click Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
+ testRunner.Then("Information is displayed according to Requisition ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search by Invalid Requisition ID")]
-        public virtual void SearchByInvalidRequisitionID()
+        [NUnit.Framework.DescriptionAttribute("Search Fabric Requisition ID by Requisition ID")]
+        public virtual void SearchFabricRequisitionIDByRequisitionID()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search by Invalid Requisition ID", ((string[])(null)));
-#line 16
- this.ScenarioSetup(scenarioInfo);
-#line 17
- testRunner.Given("wrong Requisition ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 18
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Fabric Requisition ID by Requisition ID", ((string[])(null)));
+#line 12
+this.ScenarioSetup(scenarioInfo);
+#line 13
+ testRunner.Given("Requisition ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 14
  testRunner.When("click Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 19
- testRunner.Then("Result should be displayed a message for invalid or wrong Requisition ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 15
+ testRunner.Then("Information is displayed according to Requisition ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

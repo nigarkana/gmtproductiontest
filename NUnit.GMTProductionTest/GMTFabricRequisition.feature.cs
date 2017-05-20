@@ -64,34 +64,22 @@ namespace NUnit.GMTProductionTest
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Create Requisition for Fabric Booking")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void CreateRequisitionForFabricBooking()
+        [NUnit.Framework.DescriptionAttribute("Create Fabric Booking Requisition")]
+        public virtual void CreateFabricBookingRequisition()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Requisition for Fabric Booking", new string[] {
-                        "mytag"});
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Fabric Booking Requisition", ((string[])(null)));
+#line 4
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 5
  testRunner.Given("Business Unit, Production Unit and Job code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 8
- testRunner.When("Press Enter button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
- testRunner.Then("Job Information is loaded according to the job code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 12
- testRunner.Given("Job code is valid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 13
+#line 6
+ testRunner.And("Job Information is loaded according to the job code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 7
  testRunner.And("required information is provided in the grid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
+#line 8
  testRunner.When("click on Save button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
+#line 9
  testRunner.Then("new requisition has been created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 18
- testRunner.Given("Fabric Requisition is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 19
- testRunner.When("A requisition report is displayed and click YES", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
- testRunner.Then("report will be displayed in another tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

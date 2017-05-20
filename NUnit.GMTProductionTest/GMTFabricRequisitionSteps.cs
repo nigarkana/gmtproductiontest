@@ -20,7 +20,7 @@ namespace NUnit.GMTProductionTest
     public class GMTFabricRequisitionSteps
     {
         IWebDriver driver = new ChromeDriver();
-
+        //Working
         [Given(@"Business Unit, Production Unit and Job code")]
         public void GivenBusinessUnitProductionUnitAndJobCode()
         {
@@ -62,20 +62,9 @@ namespace NUnit.GMTProductionTest
             driver.FindElement(By.Id("txtJobCode")).SendKeys("9836");
             Thread.Sleep(2000);
 
-           
-           
-
-           
-        
-
         }
 
-        [Given(@"Job code is valid")]
-        public void GivenJobCodeIsValid()
-        {
-            Assert.IsTrue(driver.FindElement(By.XPath("//*[@id='fabRequisition']/tbody/tr[1]/th[3]/b")).Displayed);
-        }
-        
+        //Working
         [Given(@"required information is provided in the grid")]
         public void GivenRequiredInformationIsProvidedInTheGrid()
         {
@@ -107,17 +96,18 @@ namespace NUnit.GMTProductionTest
             driver.FindElement(By.Id("txtRemarks3")).SendKeys("Test");
             Thread.Sleep(2000);
         }
-        
-        [When(@"Press Enter button")]
-        public void WhenPressEnterButton()
+        //Working
+        [Given(@"Job Information is loaded according to the job code")]
+        public void GivenJobInformationIsLoadedAccordingToTheJobCode()
         {
             //Press ENTER
             driver.FindElement(By.Id("txtJobCode")).SendKeys(Keys.Enter);
             //driver.findElement(By.id("elementid")).sendKeys(Keys.ENTER);
             Thread.Sleep(2000);
-
         }
 
+       
+        //Working
         [When(@"click on Save button")]
         public void WhenClickOnSaveButton()
         {
@@ -128,16 +118,18 @@ namespace NUnit.GMTProductionTest
             // driver.FindElement(By.CssSelector("btn btn-info pull-left")).Click();
         }
 
-        [Then(@"Job Information is loaded according to the job code")]
-        public void ThenJobInformationIsLoadedAccordingToTheJobCode()
-        {
-          Assert.IsTrue(driver.FindElement(By.XPath("//*[@id='fabRequisition']/tbody/tr[1]/th[3]/b")).Displayed);
-        }
-        
+       
+        //working
         [Then(@"new requisition has been created")]
         public void ThenNewRequisitionHasBeenCreated()
         {
-            ScenarioContext.Current.Pending();
+            Thread.Sleep(5000);
+            Assert.IsTrue(driver.FindElement(By.ClassName("bootbox-body")).Displayed);
+            //bootbox-close-button close
+            Thread.Sleep(2000);
+            //driver.FindElement(By.ClassName("bootbox-close-button close")).Click();
+            //driver.FindElement(By.ClassName("btn btn-info pull-left")).Click();
+            driver.Close();
         }
     }
 }

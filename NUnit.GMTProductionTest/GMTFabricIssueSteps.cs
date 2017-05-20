@@ -143,23 +143,42 @@ namespace NUnit.GMTProductionTest
             Thread.Sleep(1000);
 
             //Click No button
-           // driver.FindElement(By.XPath("//html/body/div[6]/div/div/div[2]/button[1]")).Click();
-            //Thread.Sleep(1000);
+            driver.FindElement(By.ClassName("btn btn-info pull-left")).Submit();
+            Thread.Sleep(1000);
 
 
 
             //Click Clear Button
-           // driver.FindElement(By.Id("btnClear")).Click();
+            // driver.FindElement(By.Id("btnClear")).Click();
 
 
 
 
         }
-        
+
         [Then(@"the result should be shown in the grid and saved successfully")]
         public void ThenTheResultShouldBeShownInTheGridAndSavedSuccessfully()
         {
             ScenarioContext.Current.Pending();
         }
+
+        [Given(@"Requisition ID and Job ID")]
+        public void GivenRequisitionIDAndJobID()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [When(@"enter Job ID")]
+        public void WhenEnterJobID()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"Result is populated in the grid")]
+        public void ThenResultIsPopulatedInTheGrid()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }
