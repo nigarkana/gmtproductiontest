@@ -57,6 +57,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GMTCutting.feature</DependentUpon>
     </Compile>
+    <Compile Include="GMTCuttingSteps.cs" />
     <Compile Include="GMTFabricIssue.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
