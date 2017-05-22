@@ -58,6 +58,17 @@
       <DependentUpon>GMTCutting.feature</DependentUpon>
     </Compile>
     <Compile Include="GMTCuttingSteps.cs" />
+    <Compile Include="GMTCuttingTransferToPrinEmbAddRecord.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCuttingTransferToPrinEmbAddRecord.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTCuttingViewRecord.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCuttingViewRecord.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTCuttingViewRecordSteps.cs" />
     <Compile Include="GMTFabricIssue.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +101,14 @@
     <None Include="GMTCutting.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTCutting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTCuttingTransferToPrinEmbAddRecord.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCuttingTransferToPrinEmbAddRecord.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTCuttingViewRecord.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCuttingViewRecord.feature.cs</LastGenOutput>
     </None>
     <None Include="GMTFabricIssue.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

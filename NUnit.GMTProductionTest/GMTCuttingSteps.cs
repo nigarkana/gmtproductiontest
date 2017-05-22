@@ -142,7 +142,11 @@ namespace NUnit.GMTProductionTest
         [Given(@"Job Code, Date Range")]
         public void GivenJobCodeDateRange()
         {
-            ScenarioContext.Current.Pending();
+            //Click Cutting Menu
+            driver.FindElement(By.XPath("//*[@id='MenuListLoad']/ul/li[4]/a")).Click();
+            Thread.Sleep(2000);
+          
+
         }
         
         
@@ -167,32 +171,7 @@ namespace NUnit.GMTProductionTest
             Thread.Sleep(1000);
             driver.FindElement(By.Id("btnSave")).Click();
         }
-        
-        [When(@"Click View")]
-        public void WhenClickView()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        [When(@"click Edit Button")]
-        public void WhenClickEditButton()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        [When(@"click Garments Information")]
-        public void WhenClickGarmentsInformation()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        [When(@"edit required information in the grid and other")]
-        public void WhenEditRequiredInformationInTheGridAndOther()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        
+       
         
         [Then(@"Grid has loaded")]
         public void ThenGridHasLoaded()
@@ -204,28 +183,10 @@ namespace NUnit.GMTProductionTest
 
         }
         
-        [Then(@"Cutting Record is saved successfully")]
-        public void ThenCuttingRecordIsSavedSuccessfully()
-        {
-            ScenarioContext.Current.Pending();
-        }
+       
+
+     
         
-        [Then(@"Gird is loaded with Edit and Laychart View Button")]
-        public void ThenGirdIsLoadedWithEditAndLaychartViewButton()
-        {
-            ScenarioContext.Current.Pending();
-        }
         
-        [Then(@"Cutting Information is opened with Edit view")]
-        public void ThenCuttingInformationIsOpenedWithEditView()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        [Then(@"Cutting information is edited successfully")]
-        public void ThenCuttingInformationIsEditedSuccessfully()
-        {
-            ScenarioContext.Current.Pending();
-        }
     }
 }
