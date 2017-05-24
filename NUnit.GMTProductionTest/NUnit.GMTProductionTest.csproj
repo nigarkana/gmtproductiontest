@@ -64,6 +64,12 @@
       <DependentUpon>GMTCuttingTransferToPrinEmbAddRecord.feature</DependentUpon>
     </Compile>
     <Compile Include="GMTCuttingTransferToPrinEmbSteps.cs" />
+    <Compile Include="GMTCuttingTransferToPrintEmbViewChalan.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCuttingTransferToPrintEmbViewChalan.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTCuttingTransferToPrintEmbViewChalanSteps.cs" />
     <Compile Include="GMTCuttingTransferToPrintViewRecord.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,6 +118,10 @@
     <None Include="GMTCuttingTransferToPrinEmbAddRecord.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTCuttingTransferToPrinEmbAddRecord.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTCuttingTransferToPrintEmbViewChalan.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCuttingTransferToPrintEmbViewChalan.feature.cs</LastGenOutput>
     </None>
     <None Include="GMTCuttingTransferToPrintViewRecord.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
