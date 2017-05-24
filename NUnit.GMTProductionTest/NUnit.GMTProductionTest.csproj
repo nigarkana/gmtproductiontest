@@ -63,6 +63,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GMTCuttingTransferToPrinEmbAddRecord.feature</DependentUpon>
     </Compile>
+    <Compile Include="GMTCuttingTransferToPrinEmbSteps.cs" />
     <Compile Include="GMTCuttingViewRecord.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

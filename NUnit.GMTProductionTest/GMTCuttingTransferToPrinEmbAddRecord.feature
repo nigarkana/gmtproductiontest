@@ -1,9 +1,14 @@
 ﻿Feature: GMTCuttingTransferToPrinEmb
-	Transfer to Print/Emb
+	Transfer to Print/Emb (Add Record.)
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: Transfer to Print/Emb (Add Record)  
+	Given URL Login, Transfer to Print/Emb link, Job Code
+	When I press Enter
+	Then Grid is loaded with all Cutting Id according to the Job
+	Given Send for Emb, Remarks
+	And in Description give Manual Challan Ref, Body Part per Gmt, Body Part Description, Note
+	And in Send To Search by Name or Select Employee
+	When Click Save
+	Then Print/Emb Send Successfully
+

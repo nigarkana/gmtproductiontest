@@ -181,6 +181,8 @@ namespace NUnit.GMTProductionTest
             Thread.Sleep(1000);
             Assert.AreEqual("Color", driver.FindElement(By.XPath("//*[@id='garmentsInfos']/thead/tr/th[8]/b")).Text);
 
+            driver.Close();
+
         }
         
        
