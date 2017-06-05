@@ -63,6 +63,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GMTCutting.feature</DependentUpon>
     </Compile>
+    <Compile Include="GMTCuttingInputToSewingLineAddRecord.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCuttingInputToSewingLineAddRecord.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTCuttingInputToSewingLineSteps.cs" />
     <Compile Include="GMTCuttingReceiveFromPrintEmb.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -149,6 +155,10 @@
     <None Include="GMTCutting.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTCutting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTCuttingInputToSewingLineAddRecord.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCuttingInputToSewingLineAddRecord.feature.cs</LastGenOutput>
     </None>
     <None Include="GMTCuttingReceiveFromPrintEmb.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
