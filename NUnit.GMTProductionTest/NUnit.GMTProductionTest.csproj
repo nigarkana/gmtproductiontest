@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonItem.cs" />
     <Compile Include="GMTCutting.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +101,24 @@
       <DependentUpon>GMTLogin.feature</DependentUpon>
     </Compile>
     <Compile Include="GMTLoginSteps.cs" />
+    <Compile Include="GMTPrintEmbDeliveryToCuttingAddRecord.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTPrintEmbDeliveryToCuttingAddRecord.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTPrintEmbDeliveryToCuttingAddRecordSteps.cs" />
+    <Compile Include="GMTPrintEmbDeliverytoCuttingViewRecord.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTPrintEmbDeliverytoCuttingViewRecord.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTPrintEmbDeliverytoCuttingViewRecordSteps.cs" />
+    <Compile Include="GMTPrintEmbReceiveFromCutting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTPrintEmbReceiveFromCutting.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTPrintEmbReceiveFromCuttingSteps.cs" />
     <Compile Include="GMTRequisitionSearch.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -142,6 +161,18 @@
     <None Include="GMTLogin.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTLogin.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTPrintEmbDeliveryToCuttingAddRecord.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTPrintEmbDeliveryToCuttingAddRecord.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTPrintEmbDeliverytoCuttingViewRecord.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTPrintEmbDeliverytoCuttingViewRecord.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTPrintEmbReceiveFromCutting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTPrintEmbReceiveFromCutting.feature.cs</LastGenOutput>
     </None>
     <None Include="GMTRequisitionSearch.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

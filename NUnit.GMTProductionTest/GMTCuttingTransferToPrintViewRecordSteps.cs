@@ -23,7 +23,7 @@ namespace NUnit.GMTProductionTest
             driver.FindElement(By.Id("UserName")).SendKeys("nigar");
 
             //For Password
-            driver.FindElement(By.Id("Password")).SendKeys("d123");
+            driver.FindElement(By.Id("Password")).SendKeys("dms3534");
 
             //Click Login Button
             driver.FindElement(By.Id("loginBtn")).Click();

@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Threading;
 using TechTalk.SpecFlow;
@@ -9,25 +10,27 @@ namespace NUnit.GMTProductionTest
     [Binding]
     public class GMTCuttingTransferToPrintEmbViewChalanSteps
     {
-        IWebDriver driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+        IWebDriver driver = new ChromeDriver();
         [Given(@"URL, User Name, Password, Menu Link, SubMenuLink, Job Code enter")]
         public void GivenURLUserNamePasswordMenuLinkSubMenuLinkJobCodeEnter()
         {
-            driver.Navigate().GoToUrl("http://172.16.1.63/gmtProduction");
-            driver.Manage().Window.Maximize();
-            Thread.Sleep(5000);
+            //driver.Navigate().GoToUrl("http://172.16.1.63/gmtProduction");
+            //driver.Manage().Window.Maximize();
+            //Thread.Sleep(5000);
 
 
-            //For User Name 
-            driver.FindElement(By.Id("UserName")).SendKeys("nigar");
+            ////For User Name 
+            //driver.FindElement(By.Id("UserName")).SendKeys("nigar");
 
-            //For Password
-            driver.FindElement(By.Id("Password")).SendKeys("d123");
+            ////For Password
+            //driver.FindElement(By.Id("Password")).SendKeys("dms3534");
 
-            //Click Login Button
-            driver.FindElement(By.Id("loginBtn")).Click();
+            ////Click Login Button
+            //driver.FindElement(By.Id("loginBtn")).Click();
+            CommonItem c = new CommonItem();
+            c.login();
 
-            Thread.Sleep(5000);
+            Thread.Sleep(10000);
 
             //Click Cutting Menu
             driver.FindElement(By.XPath("//*[@id='MenuListLoad']/ul/li[4]/a")).Click();
