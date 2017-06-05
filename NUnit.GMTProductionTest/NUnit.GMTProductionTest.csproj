@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GMTCutting.feature</DependentUpon>
     </Compile>
+    <Compile Include="GMTCuttingReceiveFromPrintEmb.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCuttingReceiveFromPrintEmb.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GMTCuttingReceiveFromPrintEmbSteps.cs" />
     <Compile Include="GMTCuttingSteps.cs" />
     <Compile Include="GMTCuttingTransferToPrinEmbAddRecord.feature.cs">
       <AutoGen>True</AutoGen>
@@ -133,6 +139,10 @@
     <None Include="GMTCutting.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTCutting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="GMTCuttingReceiveFromPrintEmb.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCuttingReceiveFromPrintEmb.feature.cs</LastGenOutput>
     </None>
     <None Include="GMTCuttingTransferToPrinEmbAddRecord.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
