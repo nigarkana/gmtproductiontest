@@ -53,6 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonItem.cs" />
+    <Compile Include="GMTCutting-InputToSewingLineViewRecord.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMTCutting-InputToSewingLineViewRecord.feature</DependentUpon>
+    </Compile>
     <Compile Include="GMTCutting-QCAfterPrintEmb.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +105,7 @@
       <DependentUpon>GMTCuttingViewRecord.feature</DependentUpon>
     </Compile>
     <Compile Include="GMTCuttingViewRecordSteps.cs" />
+    <Compile Include="GMTCutting_InputToSewingLineViewRecordSteps.cs" />
     <Compile Include="GMTCutting_QCAfterPrintEmbSteps.cs" />
     <Compile Include="GMTFabricIssue.feature.cs">
       <AutoGen>True</AutoGen>
@@ -148,6 +154,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="GMTCutting-InputToSewingLineViewRecord.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GMTCutting-InputToSewingLineViewRecord.feature.cs</LastGenOutput>
+    </None>
     <None Include="GMTCutting-QCAfterPrintEmb.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GMTCutting-QCAfterPrintEmb.feature.cs</LastGenOutput>
