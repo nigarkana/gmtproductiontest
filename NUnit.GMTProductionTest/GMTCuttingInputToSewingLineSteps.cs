@@ -70,16 +70,20 @@ namespace NUnit.GMTProductionTest
             select2.SelectByText("Line- E(000039)");
             Thread.Sleep(2000);
 
-            //Select 406303 Cutting Id Row 2 - Issue
-            driver.FindElement(By.Id("issueQty_1")).SendKeys("1");         
+            //Select 406303 Cutting Id Row 1 - Issue
+            driver.FindElement(By.Id("issueQty_0")).SendKeys("500");         
             Thread.Sleep(2000);
 
-            //Select 406304 Cutting Id Row 3 - Issue
-            driver.FindElement(By.Id("issueQty_2")).SendKeys("1");
+            //Select 406304 Cutting Id Row 6 - Issue
+            driver.FindElement(By.Id("issueQty_5")).SendKeys("500");
             Thread.Sleep(2000);
 
-            //Select 406305 Cutting Id Row 4 - Issue
-            driver.FindElement(By.Id("issueQty_3")).SendKeys("1");
+            //Select 406305 Cutting Id Row 8 - Issue
+            driver.FindElement(By.Id("issueQty_7")).SendKeys("500");
+            Thread.Sleep(2000);
+
+            //Select 406305 Cutting Id Row 9 - Issue
+            driver.FindElement(By.Id("issueQty_8")).SendKeys("500");
             Thread.Sleep(2000);
 
 
@@ -89,6 +93,7 @@ namespace NUnit.GMTProductionTest
         public void WhenPressEnterClickSaveToIssue()
         {
             //Click Issue Button
+            Thread.Sleep(10000);
             driver.FindElement(By.Id("btnIssue")).Click();
             Thread.Sleep(2000);
 
