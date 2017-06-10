@@ -30,7 +30,7 @@ namespace NUnit.GMTProductionTest
 
             Thread.Sleep(5000);
             
-            Thread.Sleep(10000);
+            Thread.Sleep(15000);
         }
 
         internal void login(IWebDriver driver)
