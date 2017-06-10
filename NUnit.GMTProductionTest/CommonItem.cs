@@ -29,6 +29,8 @@ namespace NUnit.GMTProductionTest
             driver.FindElement(By.Id("loginBtn")).Click();
 
             Thread.Sleep(5000);
+            
+            Thread.Sleep(5000);
         }
 
         internal void login(IWebDriver driver)
